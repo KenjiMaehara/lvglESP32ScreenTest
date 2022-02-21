@@ -29,6 +29,7 @@ void setup_scr_area(lv_ui *ui){
 	lv_style_set_bg_opa(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, 0);
 	lv_style_set_text_color(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, lv_color_make(0x00, 0x00, 0x00));
 	//lv_style_set_text_font(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, &lv_font_montserrat_24);
+	lv_style_set_text_font(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, &shin_comic18);
 	lv_style_set_text_letter_space(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, 2);
 	lv_style_set_pad_left(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, 0);
 	lv_style_set_pad_right(&style_home_labelKeySet_main02, LV_STATE_DEFAULT, 0);
@@ -42,10 +43,10 @@ void setup_scr_area(lv_ui *ui){
 	//Write codes keypad_btnm0
 	ui->keypad_btnm0 = lv_btnmatrix_create(ui->keypad, NULL);
 	static const uint8_t *keypad_btnm0_text_map[] = {
-	"A1","A2","A3","A4","\n",
-	"A5","A6","A7","A8","\n",
-	"A9","A10","A11","A12","\n",
-	"A13","A14","A15","A16","",
+	"A1","A2","A3","A4","開始","\n",
+	"A5","A6","A7","A8","解除","\n",
+	"A9","A10","A11","A12","確認","\n",
+	"A13","A14","A15","A16","戻る","",
 	};
 	lv_btnmatrix_set_map(ui->keypad_btnm0, keypad_btnm0_text_map);
 
@@ -81,7 +82,8 @@ void setup_scr_area(lv_ui *ui){
 	lv_style_set_border_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0xd6, 0xdd, 0xe3));
 	lv_style_set_border_width(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, 1);
 	lv_style_set_text_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0x00, 0x00, 0x00));
-	lv_style_set_text_font(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, &lv_font_montserrat_24);
+	//lv_style_set_text_font(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, &lv_font_montserrat_24);
+	lv_style_set_text_font(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, &shin_comic18);
 
 	lv_obj_add_style(ui->keypad_btnm0, LV_BTNMATRIX_PART_BTN, &style_keypad_btnm0_btn);
 	lv_obj_set_pos(ui->keypad_btnm0, 0, 0);
