@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <lvgl.h>
 #include <TFT_eSPI.h>
+#include <devIO.h>
 #include "menu\gui_guider.h"
 #include "menu\custom.h"
 #include "menu\events_init.h"
@@ -150,7 +151,7 @@ void setup() {
   printf("2@2@2@2@2@\n"); 
   //custom_init(&guider_ui);
   //events_init(&guider_ui);
-
+  io_init();
 
   printf("3@3@3@3@3@\n");  
 

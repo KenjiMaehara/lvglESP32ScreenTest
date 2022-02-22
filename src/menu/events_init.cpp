@@ -4,7 +4,7 @@
 #include <lvgl.h>
 #include "custom.h"
 #include <Arduino.h>
-//#include "devIO.h"
+#include "devIO.h"
 
 
 
@@ -178,13 +178,13 @@ static void keypad_btnm0event_handler(lv_obj_t * obj, lv_event_t event)
 {
 	switch (event)
 	{
-	case LV_EVENT_PRESSED:
+	case LV_EVENT_SHORT_CLICKED:
 	{
 		const char * txt = lv_btnmatrix_get_active_btn_text(obj);
-		//io_buzzer_onoff(true);
+		io_buzzer_onoff(true);
 		delay(100);
-		//io_buzzer_onoff(false);
-		printf("%s was pressed\n",txt);
+		io_buzzer_onoff(false);
+		printf("%s was pressed_20220222\n",txt);
 	}
 		break;
 	default:

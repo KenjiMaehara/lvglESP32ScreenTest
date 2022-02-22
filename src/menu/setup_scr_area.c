@@ -76,11 +76,11 @@ void setup_scr_area(lv_ui *ui){
 	lv_style_set_radius(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, 4);
 	//lv_style_set_bg_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0xff, 0xff, 0xff));
 	lv_style_set_bg_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, LV_COLOR_BLUE);
-	lv_style_set_bg_grad_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0xff, 0xff, 0xff));
-	lv_style_set_bg_grad_dir(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, LV_GRAD_DIR_VER);
+	//lv_style_set_bg_grad_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0xff, 0xff, 0xff));
+	//lv_style_set_bg_grad_dir(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, LV_GRAD_DIR_VER);
 	lv_style_set_bg_opa(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, 255);
 	lv_style_set_border_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0xd6, 0xdd, 0xe3));
-	lv_style_set_border_width(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, 1);
+	lv_style_set_border_width(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, 10);
 	lv_style_set_text_color(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, lv_color_make(0x00, 0x00, 0x00));
 	//lv_style_set_text_font(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, &lv_font_montserrat_24);
 	lv_style_set_text_font(&style_keypad_btnm0_btn, LV_STATE_DEFAULT, &shin_comic18);
